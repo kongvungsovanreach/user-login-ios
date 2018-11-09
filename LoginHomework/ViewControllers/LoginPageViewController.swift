@@ -21,6 +21,8 @@ class LoginPageViewController: UIViewController {
         self.performSegue(withIdentifier: "loginPageToMain", sender: self)
     }
     @IBAction func signupButtonTap(_ sender: Any) {
+        usernameTextField.text = ""
+        passwordTextFiled.text = ""
         self.performSegue(withIdentifier: "loginToSignup", sender: self)
     }
 
