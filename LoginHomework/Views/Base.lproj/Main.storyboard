@@ -88,6 +88,9 @@
                                 <state key="normal" title="Login Now">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginButtonTap:" destination="sWO-Go-JaN" eventType="touchUpInside" id="BQz-2o-GaD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GCk-dP-oqi">
                                 <rect key="frame" x="228" y="642" width="120" height="45"/>

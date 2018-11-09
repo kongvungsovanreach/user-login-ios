@@ -17,6 +17,9 @@ class LoginPageViewController: UIViewController {
         self.performSegue(withIdentifier: "loginToSignup", sender: self)
     }
 
+    @IBAction func loginButtonTap(_ sender: Any) {
+    
+    }
 
 
     override func viewDidLoad() {
