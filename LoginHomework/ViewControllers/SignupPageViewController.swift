@@ -14,6 +14,7 @@ class SignupPageViewController: UIViewController {
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
 
+    @IBOutlet weak var goBackButton: UIButton!
     @IBOutlet weak var confirmPasswordTextField: UITextField!
     @IBAction func goBackButtonTap(_ sender: Any) {
         dismiss(animated: true, completion: nil)
@@ -25,10 +26,13 @@ class SignupPageViewController: UIViewController {
         let confirmPassword = confirmPasswordTextField.text!
         if username.isEmpty || password.isEmpty || confirmPassword.isEmpty {
             giveAlert(info: "Please input all fields!", bottomTitle: "OK, I got it.", handler: false)
-        }else if !confirmPasswordCheck() {
+        }else if !validateUsername() {
+            giveAlert(info: "Invalid Username! Only letter and number!", bottomTitle: "I'll check it again.", handler: false)
+        }
+        else if !confirmPasswordCheck() {
             giveAlert(info: "Confirm password is not match!", bottomTitle: "I'll check it again.", handler: false)
         }else{
-            var  newUser = User(username: usernameTextField.text!, password: passwordTextField.text!)
+            let  newUser = User(username: usernameTextField.text!, password: passwordTextField.text!)
             UserSampleData.users.append(newUser)
             giveAlert(info: "Signup successfully!", bottomTitle: "Login Now!", handler: true)
 
@@ -66,6 +70,13 @@ class SignupPageViewController: UIViewController {
     }
     func buttonConfig() {
         signupButton.layer.cornerRadius = 7
+        goBackButton.layer.cornerRadius = 10
+    }
+    func validateUsername() -> Bool {
+        let username = usernameTextField.text!
+        let usernameRegex = "[A-Z0-9a-z]+"
+        let valid = NSPredicate(format: "SELF MATCHES %@", usernameRegex).evaluate(with: username)
+        return valid
     }
     /*
     // MARK: - Navigation

@@ -9,7 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var user : User!
 
+    @IBOutlet weak var welcomeLabel: UILabel!
     @IBOutlet weak var loginButton: UIButton!
     @IBAction func loginButtonTap(_ sender: Any) {
         self.performSegue(withIdentifier: "mainToLoginPage", sender: self)
@@ -18,7 +20,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         styleButton()
-
+        if user == nil {
+            print("first login")
+            welcomeLabel.isHidden = true
+        }else{
+            welcomeLabel.text = "Welcome \(user.username)"
+            loginButton.backgroundColor = UIColor.green
+        }
 
     }
 
