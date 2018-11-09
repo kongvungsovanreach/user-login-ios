@@ -9,7 +9,7 @@
 import UIKit
 
 class SignupPageViewController: UIViewController {
-
+    var users : [User] = UserSampleData.users
     @IBOutlet weak var signupButton: UIButton!
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -24,6 +24,12 @@ class SignupPageViewController: UIViewController {
         let username = usernameTextField.text!
         let password = passwordTextField.text!
         let confirmPassword = confirmPasswordTextField.text!
+        for user in users {
+            if user.username == username {
+                giveAlert(info: "Username already in use!", bottomTitle: "OK, I got it.", handler: false)
+                return
+            }
+        }
         if username.isEmpty || password.isEmpty || confirmPassword.isEmpty {
             giveAlert(info: "Please input all fields!", bottomTitle: "OK, I got it.", handler: false)
         }else if !validateUsername() {

@@ -10,11 +10,16 @@ import UIKit
 
 class LoginPageViewController: UIViewController {
     var user : User?
+
+  
     @IBOutlet weak var signupButton: UIButton!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextFiled: UITextField!
 
+    @IBAction func goBackButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "loginPageToMain", sender: self)
+    }
     @IBAction func signupButtonTap(_ sender: Any) {
         self.performSegue(withIdentifier: "loginToSignup", sender: self)
     }
