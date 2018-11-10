@@ -9,13 +9,14 @@
 import UIKit
 
 class SignupPageViewController: UIViewController {
+
     var users : [User] = UserSampleData.users
     @IBOutlet weak var signupButton: UIButton!
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-
     @IBOutlet weak var goBackButton: UIButton!
     @IBOutlet weak var confirmPasswordTextField: UITextField!
+    
     @IBAction func goBackButtonTap(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
@@ -43,19 +44,14 @@ class SignupPageViewController: UIViewController {
             giveAlert(info: "Signup successfully!", bottomTitle: "Login Now!", handler: true)
 
         }
-
-
-
-
-//
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         textViewConfig()
         buttonConfig()
-        // Do any additional setup after loading the view.
     }
+
     func giveAlert(info : String, bottomTitle : String, handler : Bool) {
         let alert = UIAlertController(title: info, message: nil, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: bottomTitle, style: .cancel, handler: handler ? {(alert) -> Void in self.dismiss(animated: true, completion: nil)
@@ -74,27 +70,20 @@ class SignupPageViewController: UIViewController {
         passwordTextField.frame.size.height = 60
         confirmPasswordTextField.frame.size.height = 60
     }
+
     func buttonConfig() {
         signupButton.layer.cornerRadius = 7
         goBackButton.layer.cornerRadius = 10
     }
+
     func validateUsername() -> Bool {
         let username = usernameTextField.text!
         let usernameRegex = "[A-Z0-9a-z]+"
         let valid = NSPredicate(format: "SELF MATCHES %@", usernameRegex).evaluate(with: username)
         return valid
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+
 extension UITextField{
     @IBInspectable var placeHolderColor: UIColor? {
         get {

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+// Samnple data instead of using API
 class UserSampleData {
     static var users : [User] = []
 }
