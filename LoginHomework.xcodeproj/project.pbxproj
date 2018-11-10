@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		601C031321945C3C00883A42 /* firstScreen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 601C031221945C3C00883A42 /* firstScreen.jpg */; };
-		601C031521945CE000883A42 /* Launch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 601C031421945CE000883A42 /* Launch.jpg */; };
-		601C031721945EED00883A42 /* group-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 601C031621945EED00883A42 /* group-512.png */; };
 		601C03192194698C00883A42 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601C03182194698C00883A42 /* LoginPageViewController.swift */; };
 		601C031B2194708300883A42 /* SignupPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601C031A2194708300883A42 /* SignupPageViewController.swift */; };
 		601C031D2194714F00883A42 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601C031C2194714F00883A42 /* User.swift */; };
 		601C0320219471BD00883A42 /* UserSampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601C031F219471BD00883A42 /* UserSampleData.swift */; };
-		601ECF972195589400819FD4 /* loginCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 601ECF962195589400819FD4 /* loginCircle.png */; };
+		6034812D219687CD00FD0B56 /* Launch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6034812A219687CD00FD0B56 /* Launch.jpg */; };
+		6034812E219687CD00FD0B56 /* group-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 6034812B219687CD00FD0B56 /* group-512.png */; };
+		6034812F219687CD00FD0B56 /* firstScreen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6034812C219687CD00FD0B56 /* firstScreen.jpg */; };
 		60BECD12219432BC00B2B460 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BECD11219432BC00B2B460 /* AppDelegate.swift */; };
 		60BECD14219432BC00B2B460 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BECD13219432BC00B2B460 /* ViewController.swift */; };
 		60BECD17219432BC00B2B460 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60BECD15219432BC00B2B460 /* Main.storyboard */; };
@@ -23,14 +22,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		601C031221945C3C00883A42 /* firstScreen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = firstScreen.jpg; path = ../../../../../Downloads/firstScreen.jpg; sourceTree = "<group>"; };
-		601C031421945CE000883A42 /* Launch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Launch.jpg; path = ../../../../../Downloads/Launch.jpg; sourceTree = "<group>"; };
-		601C031621945EED00883A42 /* group-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "group-512.png"; path = "../../../../../Downloads/group-512.png"; sourceTree = "<group>"; };
 		601C03182194698C00883A42 /* LoginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
 		601C031A2194708300883A42 /* SignupPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPageViewController.swift; sourceTree = "<group>"; };
 		601C031C2194714F00883A42 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		601C031F219471BD00883A42 /* UserSampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSampleData.swift; sourceTree = "<group>"; };
-		601ECF962195589400819FD4 /* loginCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = loginCircle.png; path = ../../../../../Downloads/loginCircle.png; sourceTree = "<group>"; };
+		6034812A219687CD00FD0B56 /* Launch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Launch.jpg; sourceTree = "<group>"; };
+		6034812B219687CD00FD0B56 /* group-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "group-512.png"; sourceTree = "<group>"; };
+		6034812C219687CD00FD0B56 /* firstScreen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = firstScreen.jpg; sourceTree = "<group>"; };
 		60BECD0E219432BC00B2B460 /* LoginHomework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginHomework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60BECD11219432BC00B2B460 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60BECD13219432BC00B2B460 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,10 +79,9 @@
 		601C031121945BE500883A42 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				601ECF962195589400819FD4 /* loginCircle.png */,
-				601C031621945EED00883A42 /* group-512.png */,
-				601C031421945CE000883A42 /* Launch.jpg */,
-				601C031221945C3C00883A42 /* firstScreen.jpg */,
+				6034812C219687CD00FD0B56 /* firstScreen.jpg */,
+				6034812B219687CD00FD0B56 /* group-512.png */,
+				6034812A219687CD00FD0B56 /* Launch.jpg */,
 				60BECD18219432BC00B2B460 /* Assets.xcassets */,
 				60BECD11219432BC00B2B460 /* AppDelegate.swift */,
 			);
@@ -186,13 +183,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				601ECF972195589400819FD4 /* loginCircle.png in Resources */,
+				6034812F219687CD00FD0B56 /* firstScreen.jpg in Resources */,
+				6034812E219687CD00FD0B56 /* group-512.png in Resources */,
+				6034812D219687CD00FD0B56 /* Launch.jpg in Resources */,
 				60BECD1C219432BC00B2B460 /* LaunchScreen.storyboard in Resources */,
 				60BECD19219432BC00B2B460 /* Assets.xcassets in Resources */,
-				601C031321945C3C00883A42 /* firstScreen.jpg in Resources */,
 				60BECD17219432BC00B2B460 /* Main.storyboard in Resources */,
-				601C031721945EED00883A42 /* group-512.png in Resources */,
-				601C031521945CE000883A42 /* Launch.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
